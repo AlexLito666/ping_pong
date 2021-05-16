@@ -85,14 +85,16 @@ while game:
        #если мяч улетел дальше ракетки, выводим условие проигрыша для второго игрока
        if ball.rect.x > win_width:
            finish = True
+     
            window.blit(lose2, (200, 200))
            game_over = True
  
        racket1.reset()
+  
        racket2.reset()
        ball.reset()
 
     
     display.update()
     clock.tick(FPS)
- 
+ #Здесь будет нова версия
